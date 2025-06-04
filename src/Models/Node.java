@@ -4,8 +4,8 @@ public class Node {
     private int value;
     private Node next;
     
-    public Node(int value) {
-        this.value = value;
+    public <T> Node(T value2) {
+        this.value = (int) value2;
         this.next = null;
     }
 
@@ -34,7 +34,7 @@ public class Node {
 
     @Override
     public String toString() {
-        return "Node"  + "|"+value+"|"  ;
+        return "Node "  + " | "+value+" | "  ;
     }
 
     
